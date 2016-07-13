@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.MainTabActivity">
+
+    <include
+        layout="@layout/toolbar"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height_normal"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/checkin"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height_normal"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/left"
+                style="@style/BlueText"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="入住时间" />
+
+            <TextView
+                android:layout_below="@id/left"
+                android:id="@+id/lineleft"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/yellow"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/checkout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height_normal"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/right"
+                style="@style/BlueText"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="离开时间" />
+
+            <TextView
+                android:layout_below="@id/right"
+                android:id="@+id/lineright"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/yellow"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/id_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <Button
+        style="@style/BasicText"
+        android:id="@+id/button"
+        android:layout_marginTop="@dimen/spacing_huge"
+        android:background="@drawable/radius_red_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_normal"
+        android:text="确定"
+        />
+
+
+</LinearLayout>
