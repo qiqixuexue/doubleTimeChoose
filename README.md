@@ -2,4 +2,4 @@
 Android 双时间选择控件
 
 
-![Alt text](/qiqixuexue/doubleTimeChoose/short.png)
+![Alt text](https://github.com/qiqixuexue/doubleTimeChoose/blob/master/short.png "Optional title")
